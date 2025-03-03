@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+
+
+
+body{
+    font-family: "Nunito Sans";
+    overflow-x: hidden ;
+}
+
+#menu a{
+    font-size: 18px;
+    font-weight: bold;
+    color: #3f3f3f;
+}
+
+#menu button{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.custom-img-slider{
+    width: 28%;
+    height: auto;
+    object-fit: cover; /* Ajusta la imagen sin distorsión */
+    display: block;
+    margin: 0 auto; /* Centrar horizontalmente */
+    border-radius: 10px;
+    border: #fa0000;
+}
+
+.caption-title{
+    background-color: rgb(17, 6, 6); /* Gris semi-transparente */
+    color: white; /* Texto blanco para contraste */
+    padding: 5px 10px; /* Espaciado alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    display: inline-block; /* Ajustar el tamaño al contenido */
+    font-family:"Nunito Sans";
+}
+
+/* Cambiar color de las flechas */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%); /* Cambia el color a blanco */
+  width: 50px;  /* Ajusta el tamaño */
+  height: 50px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: brightness(0) saturate(100%) invert(21%) sepia(97%) saturate(7493%) hue-rotate(359deg) brightness(106%) contrast(117%);
+}
+
+/*  SECCIÓN DE SERVICIOS CON IMAGEN DE FONDO */
+.services-section {
+    position: relative;
+    background: url('img/logo1.png') no-repeat center center;
+    background-size: cover;
+    color: white; /* Asegura que el texto sea blanco */
+    text-align: left;
+    padding: 100px 20px;
+}
+
+/*  CAPA OSCURA PARA MEJORAR LEGIBILIDAD DEL TEXTO */
+.services-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Fondo oscuro semi-transparente */
+}
+
+/*  CONTENIDO POR ENCIMA DE LA IMAGEN */
+.services-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px; /* Ajusta el ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenido */
+}
+
+.services-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff3130; /* Título en rojo */
+}
+
+.service-item {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.service-desc {
+    font-size: 1.1rem;
+}
+
+/* FORMULARIO DE INFORMACION AL CORREO*/
+
+.form-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.btn-custom {
+    background-color: #ff3130;
+    border-color: #ff3130;
+    color: white;
+}
+.btn-custom:hover {
+    background-color: #e62e2e;
+    border-color: #e62e2e;
+}
+.form-control:focus {
+    border-color: #0049ac;
+    box-shadow: 0 0 5px rgba(0, 73, 172, 0.5);
+}
